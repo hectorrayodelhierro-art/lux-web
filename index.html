@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUX</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <span>L</span><span>U</span><span>X</span>
+  </div>
+
+  <div class="banner">
+    <img src="images/banner.jpg" alt="LUX">
+  </div>
+
+  <section class="content">
+    <div class="block">
+      <h3>MOV. I</h3>
+      <ul class="tracklist">
+        <li><span>Sexo, Violencia y Llantas</span><div class="stars"></div></li>
+        <li><span>Reliquia</span><div class="stars"></div></li>
+        <li><span>Divinize</span><div class="stars"></div></li>
+        <li><span>Porcelana</span><div class="stars"></div></li>
+        <li><span>Mío Cristo</span><div class="stars"></div></li>
+      </ul>
+
+      <h3>MOV. II</h3>
+      <ul class="tracklist">
+        <li><span>Berghain <small>(con Björk e Yves Tumor)</small></span><div class="stars"></div></li>
+        <li><span>La Perla <small>(con Yahritza y su Esencia)</small></span><div class="stars"></div></li>
+        <li><span>Mundo Nuevo</span><div class="stars"></div></li>
+        <li><span>De Madrugá</span><div class="stars"></div></li>
+      </ul>
+
+      <h3>MOV. III</h3>
+      <ul class="tracklist">
+        <li><span>Dios Es Un Stalker</span><div class="stars"></div></li>
+        <li><span>La Yugular</span><div class="stars"></div></li>
+        <li><span>Sauvignon Blanc</span><div class="stars"></div></li>
+      </ul>
+
+      <h3>MOV. IV</h3>
+      <ul class="tracklist">
+        <li><span>La Rumba Del Perdón <small>(con Estrella Morente y Silvia Pérez Cruz)</small></span><div class="stars"></div></li>
+        <li><span>Memória <small>(con Carminho)</small></span><div class="stars"></div></li>
+        <li><span>Magnolias</span><div class="stars"></div></li>
+      </ul>
+
+      <h3>FORMATO FÍSICO</h3>
+      <ul class="tracklist">
+        <li><span>Focu'ranni</span><div class="stars"></div></li>
+        <li><span>Jeanne</span><div class="stars"></div></li>
+        <li><span>Novia Robot</span><div class="stars"></div></li>
+      </ul>
+    </div>
+
+    <div class="inputs">
+      <div>
+        <label>MEJORES CANCIONES:</label>
+        <textarea id="best-songs"></textarea>
+      </div>
+      <div>
+        <label>PEORES CANCIONES:</label>
+        <textarea id="worst-songs"></textarea>
+      </div>
+      <div>
+        <label>PUNTUACIÓN:</label>
+        <input id="global-score">
+      </div>
+    </div>
+
+    <button id="submitLux" class="lux-button">HACER LA LUX</button>
+  </section>
+
+  <!-- Firebase compat SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

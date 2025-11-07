@@ -1,0 +1,140 @@
+/* ====== ESTILO GENERAL ====== */
+body {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  background-color: #7b97ac;
+  color: white;
+}
+
+/* ====== CABECERA (L U X) ====== */
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #7b97ac;
+  font-size: 30px;
+  padding: 15px 0;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: black; /* ← LUX en color negro */
+}
+
+/* ====== BANNER ====== */
+.banner img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* ====== CONTENIDO PRINCIPAL ====== */
+.content {
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+/* ====== BLOQUES DE MOVIMIENTOS ====== */
+.block h3 {
+  font-style: italic;
+  font-weight: 600;
+  text-align: left;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* ====== LISTA DE CANCIONES ====== */
+.tracklist {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.tracklist li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  font-size: 15px;
+}
+
+.tracklist li span {
+  max-width: 75%;
+}
+
+small {
+  font-size: 12px;
+}
+
+/* ====== ESTRELLAS ====== */
+.stars {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+  min-width: 100px;
+}
+
+.star {
+  cursor: pointer;
+  color: rgba(255,255,255,0.25);
+  transition: color 0.2s;
+  font-size: 16px;
+}
+
+.star.filled {
+  color: white;
+}
+
+/* ====== BLOQUE DE INPUTS ====== */
+.inputs {
+  border-top: 1px solid rgba(255,255,255,0.3);
+  margin-top: 30px;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.inputs label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+textarea,
+input {
+  width: 100%;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+  padding: 8px;
+  font-family: "Playfair Display", serif;
+  border-radius: 4px;
+  resize: none;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: rgba(255,255,255,0.7);
+  font-style: italic;
+}
+
+/* ====== BOTÓN ====== */
+.lux-button {
+  display: block;
+  margin: 35px auto 20px auto;
+  padding: 10px 35px;
+  border: 1px solid rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.15);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+  transition: all 0.3s;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.lux-button:hover {
+  background: rgba(255,255,255,0.3);
+  transform: scale(1.05);
+}
